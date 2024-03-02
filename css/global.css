@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: black;
+}
+header h2 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+#destacado {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+section {
+  margin: 50px;
+}
+ul {
+  background-color: yellow;
+}
+ul li {
+  text-decoration: none;
+  list-style: none;
+}

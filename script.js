@@ -1,5 +1,31 @@
-const titulo = document.getElementsByTagName("h2");
-console.log("selecionando pela Tag h2:", titulo);
+function changeImagem() {
+  const img = document.getElementById("myImage");
+  const currentSrc = img.getAttribute("src");
 
-const paragrafos = document.getElementsByClassName("texto-lista");
-console.log("seleciona por nome da classe:", paragrafos);
+  if (currentSrc === "imagem1.png") {
+    img.setAttribute("src", "imagem2.png");
+    img.setAttribute("alt", "Professor Daniel");
+  } else {
+    img.setAttribute("src", "imagem1.png");
+    img.setAttribute("alt", "Silhueta misteriosa");
+  }
+}
+
+function changeType() {
+  const input = document.getElementsByTagName("input")[0];
+  const currentType = input.getAttribute("type");
+
+  switch (currentType) {
+    case "text":
+      input.setAttribute("type", "number");
+      break;
+    case "number":
+      input.setAttribute("type", "radio");
+      break;
+    case "radio":
+      input.setAttribute("type", "range");
+      break;
+    default:
+      input.setAttribute("type", "text");
+  }
+}
